@@ -1,0 +1,428 @@
+$green: #099109;
+$orange: #ff4800;
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans";
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: "Jost", sans-serif;
+}
+
+button {
+    cursor: pointer;
+    display: block;
+    border: none;
+    outline: none;
+}
+
+h2,
+h4 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+p {
+    font-family: "Jost";
+}
+
+section {
+    width: 85%;
+    margin: 0 auto;
+}
+
+select {
+    outline: none;
+    border: none;
+}
+
+nav {
+    width: 100%;
+    z-index: 100;
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0;
+        z-index: 10;
+        .admin {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        .user {
+            background: orange;
+            padding: 10px;
+            border-radius: 50%;
+            svg {
+                color: #fff;
+            }
+        }
+        #select {
+            text-transform: capitalize;
+        }
+    }
+}
+
+.divider {
+    background: #808080;
+    height: 3px;
+    width: 100%;
+}
+
+.container {
+    width: 88vw;
+    height: 100%;
+    padding-bottom: 1rem;
+    float: right;
+    max-width: 1170px;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.text-header {
+    width: 100%;
+    background: orange;
+    color: #fff;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 1.75rem;
+}
+
+.started {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    svg {
+        font-size: 2rem;
+    }
+    h4 {
+        margin: 1rem 0;
+    }
+}
+
+.card {
+    background: #fff;
+    padding: 1rem 0;
+    .headline {
+        color: $orange;
+        span {
+            margin-left: 10px;
+            color: #808080;
+        }
+    }
+}
+
+.form-input {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 1rem;
+    label {
+        text-transform: capitalize;
+    }
+    #description {
+        padding: 1.25rem 10px;
+    }
+    input[type="text"] {
+        border-radius: 5px;
+        padding: 10px;
+        border: 1px solid #808080;
+    }
+}
+
+.line {
+    width: 70%;
+    background: #ddd;
+    height: 2px;
+}
+
+.evaluate {
+    margin: 10px 0;
+    text-transform: capitalize;
+    h4 {
+        font-size: 1.1rem;
+    }
+    p {
+        margin: 8px 0;
+        color: $green;
+    }
+}
+
+fieldset {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1rem;
+    border: none;
+    flex-wrap: wrap;
+    label {
+        text-transform: capitalize;
+        margin-left: 10px;
+    }
+}
+
+.date {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.survey-form {
+    border-radius: 5px;
+    border: 2px solid #111;
+    padding: 2rem 1rem;
+    h2 {
+        text-transform: capitalize;
+        margin-bottom: 2rem;
+        span {
+            color: $green;
+        }
+    }
+}
+
+.svg {
+    margin: 1rem 0 0;
+    h4 {
+        text-transform: capitalize;
+        font-size: 3rem;
+    }
+    svg {
+        font-size: 3.5rem;
+        color: #095ad2;
+    }
+}
+
+.table {
+    border: 1px solid $green;
+    margin: 1rem 0;
+    overflow: scroll;
+    max-width: 600px;
+}
+
+.maintable {
+    background: $green;
+    color: #fff;
+    padding: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    width: 100%;
+    div {
+        padding: 0 8px;
+        border-top: 1px solid $green;
+        p {
+            padding: 8px;
+            text-transform: capitalize;
+            font-size: 12px;
+        }
+    }
+    .greenhead {
+        margin: 0;
+        border-right: 1px solid $green;
+    }
+}
+
+.red {
+    color: $orange;
+}
+
+.greenhead {
+    text-transform: capitalize;
+    color: $green;
+    margin: 10px 0;
+}
+
+.ques {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ddd;
+    padding-top: 1rem;
+    text-transform: capitalize;
+    p {
+        font-style: italic;
+        color: #808080;
+    }
+}
+
+.item-click {
+    display: flex;
+    text-transform: capitalize;
+    align-items: center;
+    .active {
+        background: $orange;
+        color: #fff;
+    }
+    div {
+        padding: 10px;
+        border: 1px solid #111;
+        cursor: pointer;
+    }
+}
+
+button {
+    font-size: 1rem;
+    padding: 10px 1rem;
+    text-transform: capitalize;
+    border-radius: 8px;
+    background: #fff;
+    color: #111;
+    border: 1px solid #111;
+}
+
+.button {
+    background: orange;
+    color: #fff;
+    border: none;
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+@media screen and (min-width: 800px) {
+    .container {
+        width: 80vw;
+    }
+    .text-header {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    section {
+        width: 90%;
+    }
+    nav {
+        .header {
+            .user {
+                padding: 6px;
+            }
+            .admin {
+                gap: 7px;
+            }
+        }
+    }
+    .started {
+        padding: 1rem;
+        h4 {
+            font-size: 0.9rem;
+        }
+    }
+    .text-header {
+        font-size: 1.1rem;
+    }
+    fieldset {
+        label {
+            font-size: 0.8rem;
+        }
+    }
+    .evaluate {
+        h4 {
+            font-size: 0.8rem;
+        }
+        p {
+            font-size: 0.8rem;
+        }
+    }
+    .svg {
+        svg {
+            font-size: 2rem;
+        }
+        h4 {
+            font-size: 2rem;
+        }
+    }
+    .survey-form {
+        h2 {
+            font-size: 1.4rem;
+        }
+        .card {
+            p {
+                font-size: 0.7rem;
+            }
+        }
+    }
+    .grid {
+        div {
+            padding: 0;
+            height: 100%;
+            p {
+                padding: 4px;
+                font-size: 7px;
+            }
+        }
+    }
+    .maintable {
+        place-items: center;
+    }
+    .ques {
+        padding: 10px 0;
+        p {
+            font-size: 0.8rem;
+            margin: 10px 0;
+        }
+    }
+    .item-click {
+        div {
+            padding: 6px;
+            font-size: 0.7rem;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .survey-form {
+        padding: 10px;
+        h2 {
+            font-size: 1.15rem;
+        }
+    }
+    .maintable {
+        p {
+            font-size: 0.9rem;
+        }
+    }
+    .grid {
+        .greenhead {
+            border-right: none;
+        }
+    }
+}
