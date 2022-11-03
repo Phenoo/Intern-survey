@@ -13,13 +13,13 @@ const Section = styled.section`
 position: fixed;
 top: 0;
 left: 0;
-background: rgba(0, 0, 0, 1);
+background: rgba(0, 0, 0, 0.3);
 height: 100vh;
 width: 12vw;
 display: flex;
 flex-direction: column;
 align-items: center;
-padding: 5rem 10px 2rem;
+padding: 5rem 0 2rem;
 gap: 4rem;
 z-index: -1;
 transition: width 0.3s ease-in-out;
@@ -76,6 +76,7 @@ transition: width 0.3s ease-in-out;
 
     span{
       font-family: "Poppins";
+      color: #000;
       display: none;
       @media screen and (min-width: 800px) {
         display: flex;
@@ -98,14 +99,15 @@ transition: width 0.3s ease-in-out;
     a{
       display: flex;
       gap: 1rem;
-      color: #fff;
+      color: #ff4800;
       @media screen and (max-width: 30rem) {
         gap: 0.3rem;
       }
     }
     }
     .active{
-    background-color: #ff4800;
+    background-color: #948d87;
+
     color: #000;
     }
   }

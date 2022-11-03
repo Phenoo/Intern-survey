@@ -7,7 +7,7 @@ const Navigation = () => {
         <section className="header">
           <div className="logo">
             <h4>
-              lorem logo
+              lorem
             </h4>
           </div>
           <div className="admin">

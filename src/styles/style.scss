@@ -1,4 +1,5 @@
-$green: #099109;
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Jost&family=Roboto&family=Outfit&family=Open+Sans&family=Poppins&display=swap');
+$green: #518424;
 $orange: #ff4800;
 *,
 *::before,
@@ -38,7 +39,10 @@ button {
     outline: none;
 }
 
-h2,
+h2 {
+    font-family: "DM Sans";
+}
+
 h4 {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
@@ -61,6 +65,7 @@ select {
 nav {
     width: 100%;
     z-index: 100;
+    background: #fff;
     .header {
         display: flex;
         justify-content: space-between;
@@ -74,7 +79,7 @@ nav {
         }
         .user {
             background: orange;
-            padding: 10px;
+            padding: 8px 10px;
             border-radius: 50%;
             svg {
                 color: #fff;
@@ -86,10 +91,15 @@ nav {
     }
 }
 
+.logo {
+    text-transform: capitalize;
+}
+
 .divider {
-    background: #808080;
-    height: 3px;
+    background: #ececec;
+    height: 2px;
     width: 100%;
+    z-index: -1;
 }
 
 .container {
@@ -97,7 +107,7 @@ nav {
     height: 100%;
     padding-bottom: 1rem;
     float: right;
-    max-width: 1170px;
+    max-width: 1195px;
 }
 
 .center {
@@ -111,7 +121,7 @@ nav {
 
 .text-header {
     width: 100%;
-    background: orange;
+    background: $green;
     color: #fff;
     padding: 10px;
     text-transform: uppercase;
@@ -333,7 +343,7 @@ button {
     nav {
         .header {
             .user {
-                padding: 6px;
+                padding: 4px 6px;
             }
             .admin {
                 gap: 7px;
@@ -409,6 +419,18 @@ button {
 }
 
 @media screen and (max-width: 400px) {
+    section {
+        width: 95%;
+    }
+    nav {
+        .header {
+            .user {
+                svg {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
     .survey-form {
         padding: 10px;
         h2 {
@@ -418,6 +440,11 @@ button {
     .maintable {
         p {
             font-size: 0.9rem;
+        }
+    }
+    .evaluate {
+        p {
+            margin: 0;
         }
     }
     .grid {
